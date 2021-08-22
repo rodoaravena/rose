@@ -21,7 +21,6 @@ def main():
     load_dotenv()
     bot = commands.Bot(command_prefix="!")
     if load_cogs(bot):
-        print("All cogs loaded!")
         bot.run(os.getenv("DISCORD_TOKEN"))
     else:
         print("Check errors, bye!")
